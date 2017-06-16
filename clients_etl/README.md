@@ -9,7 +9,8 @@ Pull core data from master MySQL databases, merge with important contextual data
 * Exclude test instances and non-customer Account types in SFDC
 
 ## Enhancements (over v1)
-* Upgraded to use SFDC REST API instead of SOAP
-* Uses common library for database connections
-* Uses pandas for data manipulation (not dictionaries)
+* Upgraded to SFDC REST API instead of SOAP
+* Upgraded to use common library for database connections
+* Upgraded to pandas for data manipulation, instead of dictionaries
 * Improved code legibility
+* Runtime reduced from 15 min to 1 min
