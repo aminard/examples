@@ -1,10 +1,10 @@
-# Conversion Impact Data Pull
+# Conversion Impact Report Generation
 
-### Summary
+## Summary
 
 Pull conversion impact data from Redshift and merge into CSV for reporting.
 
-### Requirements
+## Requirements & Tips
 
 You need the following installed on your machine:
 
@@ -31,7 +31,7 @@ You need the following installed on your machine:
     * Save the file by pressing `Shift-ZZ` (Yes, two Zs)
     * Run: `source ~/.bash_profile`
 
-### Instructions
+## Instructions
 
 0. Make sure the `read_queries()` function in `daily_pull.py` is pointing to the appropriate queries.
   * If request is for **Curations**:  Edit the function to open the file `curations_totals.sql`
