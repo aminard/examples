@@ -1,4 +1,4 @@
-# tweetR
+# tweetR App
 
 ## Description
 Pull tweets from the Twitter Search API or Streaming API, and output to CSV for further analysis.
