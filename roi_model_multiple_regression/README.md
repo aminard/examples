@@ -8,4 +8,4 @@
 Undisclosed IR100 Mass Merchant / Dept. Store retailer
 
 ## Data Description
-Web analytics data (from IBM Digital Analytics) merged with Bazaarvoice Ratings & Reviews data from 3rd-party provider
+Web analytics data (from IBM Digital Analytics) merged with Ratings & Reviews data from the Bazaarvoice Network
