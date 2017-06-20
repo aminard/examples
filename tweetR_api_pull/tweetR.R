@@ -27,15 +27,15 @@ twitCred <- OAuthFactory$new(consumerKey=consumer_key,
                              accessURL="https://api.twitter.com/oauth/access_token",
                              authURL="https://api.twitter.com/oauth/authorize")
 
-twitCred$handshake(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl"))
+twitCred$handshake(cainfo = system.file("CurlSSL", "cacert.pem", package="RCurl"))
 
-filterStream( file = "output/output.json",
-              #locations = c(-97.825270, 30.234782, -97.673521, 30.324765),
+filterStream( file="output/output.json",
+              #locations=c(-97.825270, 30.234782, -97.673521, 30.324765),
               track="#hashtag",
-              timeout = 5,
-              oauth = twitCred)
+              timeout=5,
+              oauth=twitCred)
 
-tweets <- parseTweets("output/output.json", simplify = FALSE, verbose = TRUE)
+tweets <- parseTweets("output/output.json", simplify=FALSE, verbose=TRUE)
 names(tweets)
 write.csv(tweets, file="raw_tweets.csv")
 
@@ -44,12 +44,12 @@ write.csv(tweets, file="raw_tweets.csv")
 # Set up OAuth, pull tweets, convert to DF, write to CSV
 setup_twitter_oauth(consumer_key, consumer_secret)
 
-tweetsList <- searchTwitter( "#hashtag", 
-                            n = 10000,
-                            #lang = NULL,
-                            #locale = NULL,
-                            #geocode = "30.272323,-97.743784,10mi",
-                            since = "2015-06-01")
+tweetsList <- searchTwitter("#hashtag", 
+                            n=10000,
+                            #lang=NULL,
+                            #locale=NULL,
+                            #geocode="30.272323,-97.743784,10mi",
+                            since="2015-06-01")
 
 tweetsDF <- twListToDF(tweetsList)
 names(tweetsDF)
