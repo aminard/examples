@@ -2,7 +2,7 @@
 
 ## Description
 
-A browser macro to automate the unfollowing of multiple accounts, except those that are in the whitelist.
+A Javascript browser macro to automate the unfollowing of multiple accounts, except those that are in the whitelist.
 
 ## Instructions
 1. Login to your Instagram account
